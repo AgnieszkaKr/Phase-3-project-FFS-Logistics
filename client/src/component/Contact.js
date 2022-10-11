@@ -2,19 +2,15 @@ import React from 'react'
 
 function Contact() {
   return (
-    <>
+    <div className="container">
     <div className="d-flex justify-content-center">
-        <img style={{width:'20%'}} src='../../Logo.jpg'/>
+        <img style={{width:'10%'}} src='../../Logo.png'/>
     </div>
 
     <div className="d-flex justify-content-center">
-        <h2>https://github.com/Moszio</h2>
+        <div>https://github.com/AgnieszkaKr</div>
     </div>
-
-    <div className="d-flex justify-content-center">
-        <h2>https://github.com/AgnieszkaKr</h2>
     </div>
-    </>
   )
 }
 

@@ -1,14 +1,14 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Link } from 'react-router-dom'
 
 
 
 const NavBar = ({logIn, setLogIn, setUserEmail, setPassword, openChat, setIsChatOpen, isChatOpen}) => {
-    const history = useHistory()
+    const navigate = useNavigate()
 
     const clickToGoToHomepage = () => {
-        history.push("/")
+        navigate("/")
     }
 
     const logOut = () =>{
@@ -30,30 +30,16 @@ const NavBar = ({logIn, setLogIn, setUserEmail, setPassword, openChat, setIsChat
                         <div className="navbar-nav">
                             {logIn ?  
                                 <>
-                                    <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Shipping
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><Link class="dropdown-item" to="/ship">Shipping</Link></li>
-                                        <li><Link class="dropdown-item" to="/track">Tracking</Link></li>
-                                    </ul>
-                                    </div>
-                                    
+                                    <Link class="nav-item nav-link" to="/ship">Shipping</Link>
+                                    <Link class="nav-item nav-link" to="/track">Tracking</Link>
                                     <Link to="/contact" className="nav-item nav-link" id="About">Contact</Link>
                                     <Link to="/" className="nav-item nav-link" onClick={logOut}>Log out</Link>
-
-
                                 </> 
                                 : 
                                 <>
-
                                 <Link to="/" className="nav-item nav-link active" id="Home">Home</Link>
                                 
-
-
                                 <Link to="/contact" className="nav-item nav-link" id="Contact">Contact</Link>
-
                                 <Link to="/signup" className="nav-item nav-link">Sign up</Link>
                                 <Link to="/login" className="nav-item nav-link">Log in</Link>
                                 </>}  

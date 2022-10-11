@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import SignUp from "./SignUp"
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Login = ({userConfirm, setUserConfirm, setUserLogInName, users, setUsers, setLogIn, logIn, userEmail, setUserEmail, password, setPassword, newUser, setNewUser}) => {
-    const history = useHistory()
+    const navigate = useNavigate()
 
 
     const[signUpMessage, setSignUnMessage] = useState(false)
@@ -40,7 +40,7 @@ const Login = ({userConfirm, setUserConfirm, setUserLogInName, users, setUsers, 
                     lastName:inputUser.lastName
                 })
                 
-                history.push("/")
+                navigate("/")
             }
         } else {
             setUserEmail('')
@@ -52,7 +52,7 @@ const Login = ({userConfirm, setUserConfirm, setUserLogInName, users, setUsers, 
 
     return (
             <>
-                {logIn ? <h1>Hello {userEmail} vgjfgjfgjgf</h1> : (
+                {logIn ? <h1>Hello {userEmail} </h1> : (
                     <>
                     <div className="container-fluid ps-md-0">
                     <div className="row g-0">

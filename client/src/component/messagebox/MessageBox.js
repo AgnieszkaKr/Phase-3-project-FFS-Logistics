@@ -1,3 +1,4 @@
+import React from 'react'
 import MessageList from "./MessageList"
 import Header from "./Header"
 import NewMessage from "./NewMessage"

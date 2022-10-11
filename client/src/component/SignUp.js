@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const SignUp = ({setUsers, users}) => {
 
-    const history = useHistory()
+    const navigate = useNavigate()
 
     const[newName, setNewName]=useState('')
     const handleNewName = (e) =>{
@@ -106,7 +106,7 @@ const SignUp = ({setUsers, users}) => {
     }
 
     const handleLogIn = () =>{
-        history.push("/login")
+        navigate("/login")
     }
    
 
@@ -123,7 +123,7 @@ const SignUp = ({setUsers, users}) => {
                 <div className="container">
                 <div className="row">
                     <div className="col-md-9 col-lg-8 mx-auto" style={{justifyContent:"center", textAlign:"center"}}>
-                    <img style={{width:'40%'}} src='../../Logo.jpg'/>
+                    <img style={{width:'40%'}} src='../../Logo.png'/>
 
                     <h3 className="login-heading mb-4">Congratulation<span>{<br/>}</span>Now you can log in!</h3>
                     <form onSubmit={handleLogIn}>
@@ -139,7 +139,7 @@ const SignUp = ({setUsers, users}) => {
                 <div className="container">
                 <div className="row">
                     <div className="col-md-9 col-lg-8 mx-auto">
-                    {/* <img src='../../Logo.jpg'/> */}
+                    {/* <img src='../../Logo.png'/> */}
                     <h3 className="login-heading mb-4">Create Account</h3>
                     <form onSubmit={handleNewUser}>
                         <div className="form-floating mb-3">

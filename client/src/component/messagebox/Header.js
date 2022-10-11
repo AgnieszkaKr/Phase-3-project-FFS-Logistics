@@ -1,5 +1,5 @@
 import { MdOutlineArrowDropDownCircle } from 'react-icons/md';
-
+import React from 'react'
 
 
 const Header = ({openChat}) => {

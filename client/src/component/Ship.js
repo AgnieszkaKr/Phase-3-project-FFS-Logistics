@@ -113,8 +113,9 @@ function Ship() {
                 <div className="d-flex justify-content-center">
                     <button className="btn btn-primary form-control" onClick={handlePrint} style={{width:"12%", margin:'3%', backgroundColor:"green"}}>Print confirmation</button>
                 </div>
+                <div>Now you can track you package.</div>
                 <div className="d-flex justify-content-center">
-                    <img style={{width:'40%'}} src='../../Logo.jpg'/>
+                    <img style={{width:'40%'}} src='../../Logo.png'/>
                 </div>
                 
                 </>
