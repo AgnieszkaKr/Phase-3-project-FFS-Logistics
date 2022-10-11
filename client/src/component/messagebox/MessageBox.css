@@ -1,0 +1,149 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body{
+	background: #EEEEEE;
+	font-family: 'Roboto', sans-serif;
+}
+.card{
+	width: 300px;
+	border: none;
+	border-radius: 15px;
+}
+.adiv{
+	background: #083564;
+	border-radius: 15px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	font-size: 12px;
+	height: 46px;
+}
+.chat{
+	border: none;
+	background: #c0c1e2;
+	font-size: 14px;
+	border-radius: 20px;
+}
+.bg-white{
+	border: 0.5px solid #E7E7E9;
+	font-size: 14px;
+	border-radius: 20px;
+}
+.myvideo img{
+	border-radius: 20px
+}
+.dot{
+	font-weight: bold;
+}
+.form-control{
+	border-radius: 12px;
+	border: 1px solid #F0F0F0;
+	font-size: 12px;
+}
+.form-control:focus{
+	box-shadow: none;
+	}
+.form-control::placeholder{
+	font-size: 8px;
+	color: #C4C4C4;
+}
+
+.test{
+	overflow:auto;
+	height: 300px;
+	width: 100%;
+	background-color: #f7f9f2;
+	/*background-image: linear-gradient(to bottom, #0d4b8d, #71b2f8, #95c8ff, #badafc, #ebf3fb);*/
+}
+
+.edit-message {
+	width: 100px;
+	height: 40px;
+	display: flex;
+  	flex-direction: row;
+	margin-bottom: 10px;
+	gap: 5%;
+}
+
+.input-div{
+	display: flex;
+	gap: 10%;
+}
+
+form.edit-message input[type="text"] {
+  margin-top: 0.5rem;
+  border: 1px solid transparent;
+  background-color: white;
+  width: 150px;
+  margin-left: 5px;
+}
+
+
+
+form.edit-message input[type="submit"] {
+  margin-top: 0.5rem;
+  width: 30px;
+  border-color: green;
+  border-radius: 5px;
+  background-color: rgb(179, 251, 192);
+}
+form.edit-message input[type="submit"]:hover {
+   transform: scale(1.01);
+   border: 2px solid rgb(179, 251, 192);
+}
+
+form.edit-message input[type="button"] {
+  margin-top: 0.5rem;
+  width: 30px;
+  border-color: red;
+  border-radius: 5px;
+  background-color: rgb(255, 185, 185);
+}
+form.edit-message input[type="button"]:hover {
+   transform: scale(1.01);
+   border: 2px solid rgb(255, 185, 185);
+}
+
+
+ .box-footer{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top: 1px solid #f4f4f4;
+    padding: 10px;
+    background-color: #083564;
+}
+
+
+.container-msg{
+	width: auto;
+	position: fixed;
+	right: 0;
+	bottom: 10px;
+	transition:ease-in;
+	z-index: 20;
+}
+
+.send-btn{
+	color: white;
+	background-color: #083564;
+	border: none;
+	border-radius: 5px;
+}
+.send-btn:hover{
+	transform: scale(1.01);
+	background-color: #0d427a;
+}
+
+
+.dropdown-header{
+	font-size: 20px;
+	cursor: pointer;
+}
+.dropdown-header:hover{
+		transform: scale(1.08);
+	background-color: #0d427a;
+}
+

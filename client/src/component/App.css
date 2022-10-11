@@ -1,0 +1,172 @@
+*{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  
+
+} 
+
+
+
+
+#navbar-main-div {
+  background-color: rgb(242, 242, 242);
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  background-color: black;
+  color: rgb(242, 242, 242);
+}
+
+.navbar-btn {
+  display: inline-block;
+  width: 50px;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 6px 6px   ;
+  background: rgb(242, 242, 242);
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.navbar-btn-container {
+  margin: auto 0 auto auto;
+}
+
+.navbar-company-name {
+  margin: auto auto auto 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar-company-logo{
+  height: auto;
+  width: 100px;
+  padding: 10px;
+}
+
+.home-main {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page-section-1{
+  background-color:rgb(242, 242, 242) ;
+  height: 40%;
+  
+}
+
+.home-page-section-1-container{
+  display:flex ;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  height: 100%;
+  background-color: bisque;
+}
+
+.home-page-section-1-hmp-message {
+  width: 500px;
+  height: 300px;
+  margin: auto 100px auto 0;
+}
+
+.home-page-section-1-hmp-message h1{
+  font-size: 50px;
+}
+
+.home-page-section-1-hmp-image img{
+height:80%;
+margin:10% auto 10% auto;
+}
+
+
+.home-page-section-2 {
+  width: 100%;
+  height: 30%;
+  background-color:rgb(242, 242, 242);
+}
+
+.home-page-section-2-container {
+display:flex ;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.home-page-section-3 {
+  width: 100%;
+  height: 30%;
+  background-color:rgb(242, 242, 242);
+}
+
+.home-page-section-3-container {
+display:flex ;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  height: 100%;
+  background-color: rgb(255, 233, 206);
+}
+
+.login {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('../../public/login_pictire.jpg');
+  opacity: 0.5;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+
+
+
+.chatbubble{
+  font-size: 50px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.chatbubble:hover{
+  transform: scale(1.08);
+}
+
+
+
+
+
+.carousel-container img{
+  width: auto;
+  height: 500px;
+  object-fit: contain;
+}
+
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+
+}
