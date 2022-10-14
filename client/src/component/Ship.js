@@ -100,39 +100,37 @@ function Ship() {
 
 
     return (
-    <div className="form" style={{margin:"5%"}}>
-        <div className="progressBar"></div>
-        <div className="form-container">
-            <div className="header">
-
-            { shipped ? 
-            (   <>
-                <div className="d-flex justify-content-center">
-                    <h4> You just shipped your package!</h4>
+        <div className="form" style={{margin:"5%"}}>
+            <div className="progressBar"></div>
+            <div className="form-container">
+                <div className="header">
+                    { shipped ? 
+                        (<>
+                            <div className="d-flex justify-content-center">
+                                <h4> You just shipped your package!</h4>
+                            </div>
+                            <div className="d-flex justify-content-center">
+                                <button className="btn btn-primary form-control" onClick={handlePrint} style={{width:"12%", margin:'3%', backgroundColor:"green"}}>Print confirmation</button>
+                            </div>
+                            <div>Now you can track you package.</div>
+                            <div className="d-flex justify-content-center">
+                                <img style={{width:'40%'}} src='../../Logo.png' alt="..." />
+                            </div>
+                        </>
+                        ):(<>             
+                            <h1 style={{textAlign:'Center', marginBottom:"3%"}}>{steps[step]}</h1>
+                        </>)}
+                    {returnStep()}
                 </div>
-                <div className="d-flex justify-content-center">
-                    <button className="btn btn-primary form-control" onClick={handlePrint} style={{width:"12%", margin:'3%', backgroundColor:"green"}}>Print confirmation</button>
-                </div>
-                <div>Now you can track you package.</div>
-                <div className="d-flex justify-content-center">
-                    <img style={{width:'40%'}} src='../../Logo.png'/>
-                </div>
-                
-                </>
-            ):( <>             
-                <h1 style={{textAlign:'Center', marginBottom:"3%"}}>{steps[step]}</h1>
-                </>)}
-                {returnStep()}
-            </div>
-
                 {(step === (steps.length - 1)) ?(
                     <> 
                         <div className="form"></div>
                         <div className="footer" style={{display:"inline"}}>
                             {shipped ? 
                             (null):(
-                                <><button className="btn btn-primary form-control" onClick={handlePrevious} disabled={step <= 0} style={{width:"12%", margin:'3%', }}>Return to form</button>
-                                <button className="btn btn-primary form-control" onClick={sendPackage}  style={{width:"12%", margin:'3%', float:"right"}}>Send package</button> 
+                                <>
+                                    <button className="btn btn-primary form-control" onClick={handlePrevious} disabled={step <= 0} style={{width:"12%", margin:'3%', }}>Return to form</button>
+                                    <button className="btn btn-primary form-control" onClick={sendPackage}  style={{width:"12%", margin:'3%', float:"right"}}>Send package</button> 
                                 </>
                             )}                      
                         </div>
@@ -143,13 +141,10 @@ function Ship() {
                             <button className="btn btn-primary form-control"onClick={handlePrevious} disabled={step <= 0 } style={{width:"10%", margin:'3%'}}>Back</button>
                             <button className="btn btn-primary form-control"onClick= {handleNext} disabled={step >= steps.length-1} style={{width:"10%" , margin:'3%'}}>Next</button>
                         </div>
-        
                     </>
                 )}             
             </div>
         </div>
-
-
   )
 }
 

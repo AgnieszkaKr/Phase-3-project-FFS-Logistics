@@ -10,7 +10,7 @@ const NavBar = ({logIn, setLogIn, setUserEmail, setPassword, openChat, setIsChat
     const clickToGoToHomepage = () => {
         navigate("/")
     }
-
+    
     const logOut = () =>{
             console.log("logout")
             setUserEmail("")

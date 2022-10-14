@@ -5,14 +5,12 @@ import { useNavigate } from 'react-router-dom';
 const Login = ({userConfirm, setUserConfirm, setUserLogInName, users, setUsers, setLogIn, logIn, userEmail, setUserEmail, password, setPassword, newUser, setNewUser}) => {
     const navigate = useNavigate()
 
-
     const[signUpMessage, setSignUnMessage] = useState(false)
     useEffect(()=>{
         fetch('http://localhost:9292/users')
         .then(req=> req.json())
         .then(res => setUsers(res))
     },[])
-    //console.log(users)
 
     const handleUser = (e) =>{
         setUserEmail(e.target.value)
@@ -39,7 +37,6 @@ const Login = ({userConfirm, setUserConfirm, setUserLogInName, users, setUsers, 
                     name:inputUser.name,
                     lastName:inputUser.lastName
                 })
-                
                 navigate("/")
             }
         } else {
@@ -48,7 +45,6 @@ const Login = ({userConfirm, setUserConfirm, setUserLogInName, users, setUsers, 
             setSignUnMessage(!signUpMessage)
         }
     }
-
 
     return (
             <>
